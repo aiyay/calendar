@@ -1,0 +1,74 @@
+
+@import '../../styles/definition.less';
+.date-time {
+  .nav-tips {
+    position: fixed;
+    top: 46px;
+    left: 0;
+    right: 0;
+    height: 95 * @1px;
+    p {
+      background-color: #FFFDEE;
+      padding: 8 * @1px 15 * @1px;
+      color: #D47138;
+      font-size: 12 * @1px;
+    }
+    .date-week-group {
+      display: flex;
+      text-align: center;
+      background-color: #FFFFFF;
+      border-bottom: 2 * @1px solid #EFEFEF;
+      .date-week-item {
+        flex-grow: 1;
+        color: #333333;
+        font-size: 12 * @1px;
+        padding: 10 * @1px;
+        &.red {
+          color: #F54848;
+        }
+      }
+    }
+  }
+  .block {
+    height: 95 * @1px;
+  }
+  .date-content {
+    .date-day-group {
+      background-color: #FFFFFF;
+      .date-day-title {
+        text-align: center;
+        font-size: 12 * @1px;
+        padding: 15 * @1px;
+      }
+      .date-day-content {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        .date-day-item {
+          flex-basis: calc(100%/7);
+          font-size: 14 * @1px;
+          padding: 4 * @1px 0;
+          p {
+            height: 20 * @1px;
+            &.red {
+              color: #F54848;
+            }
+          }
+          &.red {
+            color: #F54848;
+          }
+          &.grey {
+            color: #CCCCCC
+          }
+          &.active {
+            background-color: #F54848;
+            border-radius: 5px;
+            p {
+              color: #FFFFFF;
+            }
+          }
+        }
+      }
+    }
+  }
+}
